@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiking🏞</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      color: rgb(51, 139, 147);
+      border: 1px solid;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    h2 {
+      text-align: center;
+      color: #975a5e;
+      text-decoration: underline;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 20px;
+      width: 500px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      background: hsl(19, 45%, 23%);
+      color: #669c49;
+      font-size: 20px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 5px 5px 10px rgba (0, 0, 0, 0.5);
+      font-weight: 530;
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: linear-gradient(
+        to bottom,
+        rgb(182, 244, 146),
+        rgb(51, 139, 147)
+      );
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .more-benefits {
+      color: #005672;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>I love Hiking</h1>
+      <h2>Especially in the woods</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/241/original/waldwanderung.jpg?1626625080"
+        alt="_blank"
+      />
+      <br />
+      <hr />
+      <p>
+        <span>
+          <strong> Hiking </strong> is more than just fun. It’s good for you,
+          too! Countless <em>studies and research</em> have consistently shown
+          that regular exercise not only improves our overall health and
+          fitness, but lengthens and improves the quality of our lives. Regular
+          physical activity substantially reduces the risk of dying of coronary
+          heart disease, and decreases the risk for colon cancer, diabetes, and
+          high blood pressure. It also helps to control weight; contributes to
+          healthy bones, muscles, and joints; helps to relieve the pain of
+          arthritis; reduces symptoms of anxiety and depression; and is
+          associated with fewer hospitalizations and physician visits. Walking
+          is one of the lowest impact sports around. This means that while you
+          derive all the cardiovascular benefits of other aerobic activities,
+          you do so with a minimum of stress, strain and pounding to your body.
+        </span>
+      </p>
+      <a
+        href="https://americanhiking.org/resources/health-benefits-of-hiking/"
+        target="_blank"
+        class="more-benefits"
+      >
+        <em> More Benefits </em>
+      </a>
+
+      <br />
+      <button>Hiking Tips</button>
+    </div>
+    <script>
+      function hikingTips() {
+        let hiker = prompt("What kind of hiker are you?");
+
+        if (hiker === "beginner" || hiker === "intermediate") {
+          alert("Here are some easy hiking routs for you. Enjoy! 😊");
+        } else {
+          if (hiker === "advanced" || hiker === "expert") {
+            alert("Here are some challenging hiking routs for you! Enjoy! 💪");
+          } else {
+            alert("Are you not sure? Try our Quiz to find it out! 🔎");
+          }
+        }
+      }
+      let hikingButton = document.querySelector("button");
+      hikingButton.addEventListener("click", hikingTips);
+    </script>
+  </body>
+</html>
